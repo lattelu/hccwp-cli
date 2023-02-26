@@ -24,6 +24,9 @@ lerna-debug.log*
 
 # Distribution
 dist
+lib
 
 # Link config
 link.config.json
+
+

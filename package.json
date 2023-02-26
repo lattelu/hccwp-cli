@@ -20,6 +20,7 @@
 		"dev": "tsx src/index.ts --watch",
 		"build": "tsc",
 		"commit": "cz",
+		"release": "git stash && git pull && release-it && git stash pop",
 		"publish": "pnpm build && pnpm publish --access public"
 	},
 	"keywords": [
@@ -43,7 +44,10 @@
 	},
 	"config": {
 		"commitizen": {
-			"path": "cz-conventional-changelog"
+			"path": "cz-customizable"
+		},
+		"cz-customizable": {
+			"config": ".cz-config.cjs"
 		}
 	},
 	"dependencies": {
@@ -64,6 +68,7 @@
 		"@antfu/eslint-config": "^0.35.3",
 		"@commitlint/cli": "^17.4.4",
 		"@commitlint/config-conventional": "^17.4.4",
+		"@release-it/conventional-changelog": "^5.1.1",
 		"@types/ejs": "^3.1.2",
 		"@types/figlet": "^1.5.5",
 		"@types/fs-extra": "^11.0.1",
@@ -73,11 +78,13 @@
 		"@typescript-eslint/parser": ">=5.43.0",
 		"commitizen": "^4.3.0",
 		"cz-conventional-changelog": "^3.3.0",
+		"cz-customizable": "^7.0.0",
 		"eslint": ">=8.0.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.3",
 		"prettier": "^2.8.4",
+		"release-it": "^15.6.0",
 		"tsx": "^3.12.3",
 		"typescript": ">=4.4"
 	}

@@ -10,7 +10,7 @@
 	"files": [
 		"package.json",
 		"README.md",
-		"dist"
+		"lib"
 	],
 	"engines": {
 		"node": "^14.18.0 || >=16.0.0"

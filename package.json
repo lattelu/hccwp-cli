@@ -21,7 +21,7 @@
 		"build": "tsc",
 		"commit": "cz",
 		"release": "git stash && git pull && release-it && git stash pop",
-		"publish": "pnpm build && pnpm publish --access public"
+		"do-publish": "pnpm build && pnpm publish --access public"
 	},
 	"keywords": [
 		"typescript 脚手架",

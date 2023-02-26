@@ -5,7 +5,7 @@ import figlet from 'figlet'
 import { create } from './core/index.js'
 import type { CreateOptions, PackageJSON } from './types.js'
 
-const packageJSON = fs.readJSONSync('package.json') as PackageJSON
+const packageJSON = fs.readJSONSync('./package.json') as PackageJSON
 
 program
   .command('create <name>')

@@ -5,7 +5,7 @@ import inquirer from 'inquirer'
 import downloadGitRepo from 'download-git-repo'
 import chalk from 'chalk'
 import shell from 'shelljs'
-import { REPO_NAME } from '../utils/index.js'
+import { REPO_NAME } from '../config.js'
 import { getRepoList, getTagList } from './http.js'
 // 添加加载动画
 const downloadGitRepoByPromise = util.promisify(downloadGitRepo)

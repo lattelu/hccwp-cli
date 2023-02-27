@@ -1,6 +1,13 @@
 # 📋 更新历史
 
 
+## [1.0.7](https://github.com/lattelu/hccwp-cli/commit/compare/1.0.6...1.0.7) (2023-02-27)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **config:** 修复一些问题 ([43246ac](https://github.com/lattelu/hccwp-cli/commit/43246ac580a3c88f3bb5f7710cf69af2f897e29a))
+
 ## [1.0.6](https://github.com/lattelu/hccwp-cli/commit/compare/1.0.5...1.0.6) (2023-02-26)
 
 
